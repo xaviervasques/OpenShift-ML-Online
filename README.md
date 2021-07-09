@@ -1,1 +1,1 @@
-# OpenShift-ML-Online
+# Kubernetes-ML-Online
