@@ -11,7 +11,7 @@ COPY train.py ./train.py
 COPY api.py ./api.py
 
 USER 1001
-EXPOSE 5000
+EXPOSE 8080
 
 RUN python3 train.py
 RUN python3 api.py

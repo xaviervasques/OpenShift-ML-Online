@@ -41,7 +41,7 @@ def prediction():
     return {'score': score}
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', ports=5000, use_reloader=True) # Launch built-in we server and run this Flask webapp
+    app.run(debug=True, host='0.0.0.0', ports=8080, use_reloader=True) # Launch built-in we server and run this Flask webapp
 
 
 
