@@ -10,6 +10,8 @@ RUN pip install -r requirements.txt
 COPY train.py ./train.py
 COPY api.py ./api.py
 
+USER 1001
 EXPOSE 5000
 
 RUN python3 train.py
+RUN python3 api.py
