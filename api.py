@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 # API 
 # Flask route so that we can serve HTTP traffic on that route
-@app.route('/score',methods=['POST', 'GET'])
+@app.route('/',methods=['POST', 'GET'])
 # Return predictions of inference using Iris Test Data
 def prediction():
 
