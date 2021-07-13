@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 # API 
 # Flask route so that we can serve HTTP traffic on that route
-@app.route('/score',methods=['POST', 'GET'])
+@app.route('/score')
 # Return predictions of inference using Iris Test Data
 def prediction():
 
@@ -41,7 +41,7 @@ def prediction():
     return {'score': score}
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=8080, use_reloader=True) # Launch built-in we server and run this Flask webapp
+    app.run(debug=True, host='0.0.0.0', port=8080) # Launch built-in we server and run this Flask webapp
 
 
 
